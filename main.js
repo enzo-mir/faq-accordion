@@ -3,11 +3,6 @@ const h2s = document.querySelectorAll("h2");
 
 function openAccordion(e) {
   const article = e.target.parentNode;
-  if (article.classList.contains("open")) {
-    article.querySelector("button").innerText = "+";
-  } else {
-    article.querySelector("button").innerText = "-";
-  }
   article.classList.toggle("open");
 }
 

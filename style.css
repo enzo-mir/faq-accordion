@@ -56,7 +56,7 @@ body {
   }
 }
 
-section {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,8 +88,9 @@ button {
   border-radius: 50%;
   font-size: 1.5em;
   border: 0px;
-  background: hsl(292, 65%, 50%);
+  background: url(./assets/images/icon-plus.svg);
   color: white;
+
   &:hover {
     cursor: pointer;
   }
@@ -103,7 +104,7 @@ h2 {
     color: hsl(292, 65%, 50%);
   }
 }
-section > header {
+main > div#headerCont {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -118,12 +119,12 @@ section > header {
   }
 }
 
-section > main {
+main > section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 1em;
+  gap: 2em;
 }
 
 article {
@@ -147,7 +148,7 @@ article {
   &.open {
     grid-template-rows: auto 1fr;
     & > button {
-      background-color: hsl(292, 42%, 14%);
+      background: url(./assets/images/icon-minus.svg);
     }
   }
 
